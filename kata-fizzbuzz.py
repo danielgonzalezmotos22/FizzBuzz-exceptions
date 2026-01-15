@@ -1,26 +1,25 @@
-def getnum():
-    # num = int(input("diga un numero: "))
-    
-    try:
-        num = int(input("diga un numero: "))
-    except Exception:
-        num = int(input("Argumento no valido, diga otro argumento: "))
-    # print (num)
+def FizzBuzz():
+    i = 0
+    while i == 0:
+        try:
+            num = int(input("diga un numero entre 0 y 100: "))
+            if not num <=0 and num >= 101:
+                print(f"Numero invalido, diga otro numero: {num}")
+            else:
+                i += 1
+        except ValueError:
+            print("Diga otra cosa")
     if num %3 == 0 and num %5 == 0:
-        print("FizzBuzz")
+        return ("FizzBuzz")
     elif num %5 == 0:
-        print("Buzz")
+        return("Buzz")
     elif num %3 == 0:
-        print("Fizz")
+        return("Fizz")
     else:
-        print(num)
+            print(num)
     return num
       
-    # try:
-    #     num ==
-    # except ValueError:
-    #     print("Argumento no valido")
 
 if __name__ == "__main__":
-    print(getnum())
-    # print(FizzBuzz())
+
+    print(FizzBuzz())
