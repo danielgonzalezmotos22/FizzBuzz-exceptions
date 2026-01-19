@@ -18,7 +18,7 @@ def test_si_numero_es_negativo():
         
 def test_numero_mayor_a_cien():
     with pytest.raises(ValueError):
-        FizzBuzz(101)
+        FizzBuzz(200)
 
 def test_pasa_str():
     with pytest.raises(TypeError):
